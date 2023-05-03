@@ -1,0 +1,112 @@
+.hidden {
+  visibility: hidden;
+}
+
+#url-bg {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1c1f22;
+}
+
+#url-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #d2d4da;
+}
+
+#url-shortener {
+  min-width: 400px;
+}
+#url-shortener ::selection {
+  background: #1c1f22;
+}
+#url-shortener h1 {
+  color: #d2d4da;
+  font-size: 50px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+#url-shortener p {
+  font-weight: 400;
+}
+#url-shortener form {
+  display: flex;
+}
+#url-shortener #linkinput {
+  margin-right: 10px;
+}
+#url-shortener .form-control {
+  border: 1px solid #009580;
+  background-color: #d2d4da;
+  color: #25292d;
+}
+#url-shortener .form-control:focus {
+  border: 2px solid #009580;
+  box-shadow: none;
+}
+#url-shortener .btn-primary {
+  background-color: #009580;
+  border: 2px solid #009580;
+  color: #d2d4da;
+  font-weight: 500;
+}
+#url-shortener .btn-primary:hover {
+  background-color: #00af96;
+  border: 2px solid #00af96;
+}
+
+#input {
+  display: flex;
+}
+
+#url-result {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  color: #d2d4da;
+  cursor: pointer;
+}
+#url-result i {
+  color: #d2d4da;
+  margin: 0px 10px;
+  font-size: 20px;
+}
+#url-result #message {
+  font-weight: 600;
+}
+
+#copied {
+  position: absolute;
+  font-size: 14px;
+  left: 50px;
+  top: 30px;
+  width: max-content;
+  color: #009580;
+  font-weight: 400;
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #url-shortener {
+    padding: 0px 20px;
+  }
+  #url-shortener h1 {
+    font-size: 40px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
