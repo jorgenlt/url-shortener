@@ -7,7 +7,7 @@ const submit = document.querySelector("#submit-url");
 const getShortUrl = () => {
     const linkInput = link.value;
     const data = {
-        "domain": "url.jorgenlt.me",
+        "domain": "url.jorgenlt.no",
         "originalURL": linkInput,
         "allowDuplicates": false 
     };
